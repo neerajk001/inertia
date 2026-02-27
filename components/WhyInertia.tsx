@@ -44,8 +44,8 @@ export default function WhyInertia() {
                         transition={{ duration: 0.6 }}
                     >
                         <span className="text-sm font-semibold tracking-[0.2em] text-neutral-500 uppercase block mb-4">Why Choose Us</span>
-                        <h2 className="text-4xl md:text-5xl font-bold text-neutral-950 tracking-tight mb-6">
-                            Why Inertia Studio
+                        <h2 className="text-4xl md:text-5xl font-bold text-neutral-950 tracking-tight mb-6 flex justify-center items-center gap-2">
+                            Why <span className="flex items-center"><span className="text-black">vector</span> <span className="text-[#FFB703]">IO</span></span>
                         </h2>
                         <p className="text-lg text-neutral-600">
                             We focus on what actually matters for small businesses.

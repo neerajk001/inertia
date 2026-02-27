@@ -35,22 +35,10 @@ export default function Hero() {
                             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                             className="flex flex-col items-center text-center relative z-10"
                         >
-                            {/* Label */}
-                            <div className="mb-4 overflow-hidden">
-                                <motion.span
-                                    className="inline-block py-1.5 px-4 rounded-full border border-neutral-200 bg-white/50 text-xs font-bold tracking-widest uppercase text-neutral-900 backdrop-blur-sm shadow-sm"
-                                    initial={{ opacity: 0, y: 20 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: 0.2, duration: 0.8 }}
-                                >
-                                    Inertia Studio
-                                </motion.span>
-                            </div>
-
                             {/* Headline */}
                             <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-7xl font-bold tracking-tight leading-[1.1] mb-5 text-neutral-950 max-w-5xl">
-                                Apps & Web Apps
-                                <br className="hidden md:block" /> That Help Small Businesses <span className="text-amber-500">Grow.</span>
+                                Apps and webapps
+                                <br className="hidden md:block" /> built for <span className="text-amber-500">scale.</span>
                             </h1>
 
                             {/* Subtext */}
@@ -60,18 +48,8 @@ export default function Hero() {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.3, duration: 0.8 }}
                             >
-                                We create modern, high-converting websites and scalable web applications for startups and small businesses—without big agency costs.
+                                We help founders and growing teams build websites and applications that turn traffic into revenue.
                             </motion.p>
-
-                            {/* Tagline */}
-                            <motion.div
-                                className="mb-6 text-lg md:text-xl font-medium text-neutral-900"
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 0.35, duration: 0.8 }}
-                            >
-                                Clarity in <span className="font-bold text-amber-600">design</span>. Motion <span className="font-bold text-amber-600">with purpose</span>. Built to <span className="font-bold text-amber-600">convert</span>.
-                            </motion.div>
 
                             {/* CTAs */}
                             <motion.div

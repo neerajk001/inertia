@@ -11,10 +11,10 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL('https://inertiastudio.com'), // Replace with your actual domain
   title: {
-    default: "Inertia Studio | High-Converting Websites & Apps",
-    template: "%s | Inertia Studio",
+    default: "vectorIO | High-Converting Websites & Apps",
+    template: "%s | vectorIO",
   },
-  description: "We help small businesses grow with modern, high-performance websites and scalable web apps. No agency overhead, just results.",
+  description: "We help founders and growing teams build websites and applications that turn traffic into revenue.",
   keywords: [
     "Web Design",
     "Web Development",
@@ -23,30 +23,30 @@ export const metadata: Metadata = {
     "Next.js Agency",
     "React Developer",
     "Freelance Web Designer",
-    "Inertia Studio",
+    "vectorIO",
   ],
-  authors: [{ name: "Inertia Studio" }],
-  creator: "Inertia Studio",
+  authors: [{ name: "vectorIO" }],
+  creator: "vectorIO",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://inertiastudio.com",
-    title: "Inertia Studio | Websites & Web Apps",
-    description: "We help small businesses grow with modern, high-performance websites and scalable web apps.",
-    siteName: "Inertia Studio",
+    title: "vectorIO | Websites & Web Apps",
+    description: "We help founders and growing teams build websites and applications that turn traffic into revenue.",
+    siteName: "vectorIO",
     images: [
       {
         url: "/og-image.jpg", // Add an 'og-image.jpg' to your public folder for best results
         width: 1200,
         height: 630,
-        alt: "Inertia Studio",
+        alt: "vectorIO",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Inertia Studio | Websites & Web Apps",
-    description: "High-converting websites and scalable web apps for small businesses.",
+    title: "vectorIO | Websites & Web Apps",
+    description: "We help founders and growing teams build websites and applications that turn traffic into revenue.",
     // images: ["/twitter-image.jpg"], // Add a twitter image if you have one
   },
   robots: {

@@ -2,14 +2,14 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowRight, ArrowUpRight } from "lucide-react";
 
 const navLinks = [
   { name: "Services", href: "#services" },
-  { name: "Approach", href: "#approach" },
   { name: "Work", href: "#work" },
-  { name: "Why Us", href: "#why-inertia" },
+  { name: "About", href: "#why-inertia" },
 ];
 
 export default function Navbar() {
@@ -46,11 +46,14 @@ export default function Navbar() {
         }`}
     >
       <div
-        className={`w-full max-w-5xl flex items-center justify-between transition-all duration-300 bg-white/50 backdrop-blur-xl border border-neutral-200 pl-6 pr-2 py-2 shadow-sm ${scrolled ? "bg-white/80 border-neutral-300" : ""
+        className={`w-full max-w-5xl flex items-center justify-between transition-all duration-300 bg-white/50 backdrop-blur-xl border border-neutral-200 pl-5 pr-2 py-1.5 shadow-sm ${scrolled ? "bg-white/80 border-neutral-300" : ""
           }`}
       >
-        <Link href="/" className="text-lg md:text-xl font-bold tracking-tighter text-neutral-950 z-50">
-          Inertia Studio
+        <Link href="/" className="z-50 flex items-center gap-2" aria-label="vectorIO Home">
+          <span className="relative h-9 w-9 shrink-0 md:h-10 md:w-10">
+            <Image src="/logo.png" alt="" fill className="object-contain" sizes="56px" priority />
+          </span>
+          <span className="text-base md:text-lg font-bold tracking-tight text-neutral-950"><span className="text-black">vector</span><span className="text-[#FFB703]">IO</span></span>
         </Link>
 
         {/* Desktop Nav */}
@@ -59,7 +62,7 @@ export default function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="relative px-5 py-2 text-sm font-medium text-neutral-600 hover:text-neutral-950 transition-colors duration-2000 z-[1]
+              className="relative px-4 py-1.5 text-sm font-medium text-neutral-600 hover:text-neutral-950 transition-colors duration-2000 z-[1]
                 before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full 
                 before:border-t-2 before:border-b-2 before:border-neutral-950 
                 before:scale-y-[2] before:opacity-0 before:transition-all before:duration-300
@@ -81,7 +84,7 @@ export default function Navbar() {
             className="hidden md:block relative group"
           >
             {/* Fixed-width wrapper (this prevents navbar shifting) */}
-            <div className="relative flex items-center w-[182px] h-[44px]">
+            <div className="relative flex items-center w-[182px] h-[36px]">
 
               {/* Main button */}
               <span

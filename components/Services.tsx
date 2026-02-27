@@ -67,7 +67,7 @@ export default function Services() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="bg-white rounded-2xl p-8 shadow-sm border border-neutral-100 hover:shadow-md transition-shadow duration-300 flex flex-col h-full"
+                            className="bg-white rounded-2xl p-8 shadow-sm border border-neutral-100 flex flex-col h-full transition-all duration-300 hover:border-[#FFB703]/40 hover:shadow-[0_0_0_1px_rgba(255,183,3,0.4),0_0_20px_rgba(255,183,3,0.15)]"
                         >
                             <span className="text-[#FFB703] font-bold text-lg mb-4 block">{service.id}</span>
                             <h3 className="text-2xl font-bold text-neutral-950 mb-4 leading-tight">

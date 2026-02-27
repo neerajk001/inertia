@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Twitter, Linkedin, Instagram, Github } from "lucide-react";
 import BookCallButton from "./BookCallButton";
 
@@ -27,11 +28,14 @@ export default function Footer() {
 
                     {/* Left Column - Brand */}
                     <div className="flex flex-col items-start">
-                        <span className="text-xl font-bold tracking-tighter text-neutral-950 mb-4">
-                            Inertia Studio
-                        </span>
+                        <Link href="/" className="mb-4 flex items-center gap-2" aria-label="vectorIO Home">
+                            <span className="relative h-12 w-12 shrink-0 md:h-14 md:w-14">
+                                <Image src="/logo.png" alt="" fill className="object-contain" sizes="56px" />
+                            </span>
+                            <span className="text-sm font-bold tracking-tight text-neutral-950"><span className="text-black">vector</span><span className="text-[#FFB703]">IO</span></span>
+                        </Link>
                         <p className="text-neutral-600 leading-relaxed max-w-xs">
-                            Apps & websites that help small businesses grow.
+                            We help founders and growing teams build websites and applications that turn traffic into revenue.
                         </p>
                     </div>
 
@@ -48,8 +52,8 @@ export default function Footer() {
                             <Link href="#work" className="text-neutral-600 hover:text-neutral-950 font-medium transition-colors">
                                 Work
                             </Link>
-                            <Link href="#how-we-work" className="text-neutral-600 hover:text-neutral-950 font-medium transition-colors">
-                                How We Work
+                            <Link href="#why-inertia" className="text-neutral-600 hover:text-neutral-950 font-medium transition-colors">
+                                About
                             </Link>
                             <Link href="https://cal.com/neeraj-kushwaha-juw62g/discovery-call" className="text-neutral-600 hover:text-neutral-950 font-medium transition-colors">
                                 Contact
@@ -82,7 +86,7 @@ export default function Footer() {
 
                 {/* Bottom Bar */}
                 <div className="border-t border-neutral-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-neutral-500 gap-4">
-                    <p>© {new Date().getFullYear()} Inertia Studio. All rights reserved.</p>
+                    <p>© {new Date().getFullYear()} vector IO. All rights reserved.</p>
                     <div className="flex gap-6 items-center">
                         <Link href="https://twitter.com" target="_blank" aria-label="Twitter" className="text-neutral-400 hover:text-[#FFB703] transition-colors">
                             <Twitter size={20} />
