@@ -35,7 +35,7 @@ export default function BookCallButton({
     return (
         <Link
             href={calLink}
-            className={`inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold text-base transition-all duration-300 bg-white text-neutral-950 border border-neutral-200 hover:border-neutral-300 hover:bg-neutral-50 hover:shadow-sm hover:-translate-y-0.5 gap-2 ${className}`}
+            className={`inline-flex items-center justify-center px-8 py-3.5 rounded-full font-bold text-base transition-all duration-300 bg-neutral-950 text-white border border-neutral-800 hover:border-neutral-700 hover:bg-neutral-900 hover:shadow-lg hover:-translate-y-0.5 gap-2 ${className}`}
         >
             {children || "View Our Work"}
             <ArrowRight className="w-5 h-5" />
