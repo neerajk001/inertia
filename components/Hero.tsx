@@ -60,8 +60,8 @@ export default function Hero() {
                             >
                                 <BookCallButton variant="primary" />
 
-                                <BookCallButton variant="secondary" calLink="#work">
-                                    View Our Work
+                                <BookCallButton variant="secondary" calLink="#plans">
+                                    View Plans
                                 </BookCallButton>
                             </motion.div>
 

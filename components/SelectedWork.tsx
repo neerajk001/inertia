@@ -132,7 +132,7 @@ export default function SelectedWork() {
                         Want to see more of our work?
                     </span>
                     <Link
-                        href="#"
+                        href="/work"
                         className="inline-flex items-center justify-center px-8 py-4 rounded-full font-bold text-base transition-all duration-300 bg-[#FFB703] text-neutral-950 hover:bg-[#ffc94d] shadow-lg hover:shadow-xl hover:scale-105 gap-2"
                     >
                         View All Projects

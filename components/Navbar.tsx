@@ -7,9 +7,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowRight, ArrowUpRight } from "lucide-react";
 
 const navLinks = [
-  { name: "Services", href: "#services" },
-  { name: "Work", href: "#work" },
-  { name: "About", href: "#why-inertia" },
+  { name: "Services", href: "/#services" },
+  { name: "Work", href: "/#work" },
+  { name: "About", href: "/about" },
 ];
 
 export default function Navbar() {

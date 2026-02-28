@@ -2,8 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Services from "@/components/Services";
 import SelectedWork from "@/components/SelectedWork";
-import HowWeWork from "@/components/HowWeWork";
-import WhyInertia from "@/components/WhyInertia";
+import Plans from "@/components/Plans";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -13,8 +12,7 @@ export default function Home() {
       <Hero />
       <Services />
       <SelectedWork />
-      <HowWeWork />
-      <WhyInertia />
+      <Plans />
       <Footer />
     </main>
   );
